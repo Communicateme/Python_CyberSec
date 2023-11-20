@@ -1,1 +1,2 @@
 - **Python Lectures**: https://www.youtube.com/@kaseynguyen4086
+- **Automation With Python**: https://www.youtube.com/watch?v=PXMJ6FS7llk
