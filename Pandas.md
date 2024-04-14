@@ -12,4 +12,15 @@
 10. List=['City','colors_reported','state']
     df.columns =  List --- this will change the cloumns name.
 11. df = df.columns.str.replace('-','_') -- replaces the dash with backslash in columns name.
-12. 
+12. df.drop('Name', axis=1, inplace=True) -- Remove the column called name from Table. ***"axis=1" means Column | "axis=0" means Rows***
+13. df.drop(['Name','age',], axis=1, inplace=True) -- Remove multiple columns
+14. df.drop(([0,1], axis=0, inplace=True) -- Remove row from index 0 & 1.
+15. df.sort_values('Name', ascending=false) -- sort the column to decending order. Default is ascending
+16. **Filtering**
+ - https://youtu.be/2AFGPdNn4FM?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&t=606
+ - https://youtu.be/YPItfQ87qjM?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&t=375
+ - https://youtu.be/YPItfQ87qjM?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&t=542
+17. import pandas as pd - # Assuming df is your DataFrame and 'url' is your column with URLs
+mask = df['url'].str.contains('microsoft.com')
+filtered_df = df[mask]
+
